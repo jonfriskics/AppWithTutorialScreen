@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB00F6191A584ED800FE400A /* SinglePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00F6181A584ED800FE400A /* SinglePageViewController.swift */; };
 		ABE280A01A5771500049DD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2809F1A5771500049DD52 /* AppDelegate.swift */; };
-		ABE280A21A5771500049DD52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE280A11A5771500049DD52 /* ViewController.swift */; };
-		ABE280A51A5771500049DD52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE280A31A5771500049DD52 /* Main.storyboard */; };
 		ABE280A71A5771500049DD52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE280A61A5771500049DD52 /* Images.xcassets */; };
 		ABE280AA1A5771500049DD52 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE280A81A5771500049DD52 /* LaunchScreen.xib */; };
 		ABE280B61A5771500049DD52 /* AppWithTutorialScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE280B51A5771500049DD52 /* AppWithTutorialScreenTests.swift */; };
+		ABF51CBD1A584C54009E271E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF51CBC1A584C54009E271E /* RootViewController.swift */; };
+		ABF51CBF1A584DE7009E271E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF51CBE1A584DE7009E271E /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB00F6181A584ED800FE400A /* SinglePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePageViewController.swift; sourceTree = "<group>"; };
 		ABE2809A1A5771500049DD52 /* AppWithTutorialScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWithTutorialScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2809E1A5771500049DD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABE2809F1A5771500049DD52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABE280A11A5771500049DD52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABE280A41A5771500049DD52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE280A61A5771500049DD52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABE280A91A5771500049DD52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ABE280AF1A5771500049DD52 /* AppWithTutorialScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWithTutorialScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE280B41A5771500049DD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABE280B51A5771500049DD52 /* AppWithTutorialScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWithTutorialScreenTests.swift; sourceTree = "<group>"; };
+		ABF51CBC1A584C54009E271E /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ABF51CBE1A584DE7009E271E /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				ABE2809F1A5771500049DD52 /* AppDelegate.swift */,
-				ABE280A11A5771500049DD52 /* ViewController.swift */,
-				ABE280A31A5771500049DD52 /* Main.storyboard */,
+				ABF51CBC1A584C54009E271E /* RootViewController.swift */,
+				ABF51CBE1A584DE7009E271E /* TutorialViewController.swift */,
+				AB00F6181A584ED800FE400A /* SinglePageViewController.swift */,
 				ABE280A61A5771500049DD52 /* Images.xcassets */,
 				ABE280A81A5771500049DD52 /* LaunchScreen.xib */,
 				ABE2809D1A5771500049DD52 /* Supporting Files */,
@@ -192,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE280A51A5771500049DD52 /* Main.storyboard in Resources */,
 				ABE280AA1A5771500049DD52 /* LaunchScreen.xib in Resources */,
 				ABE280A71A5771500049DD52 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE280A21A5771500049DD52 /* ViewController.swift in Sources */,
+				ABF51CBD1A584C54009E271E /* RootViewController.swift in Sources */,
+				ABF51CBF1A584DE7009E271E /* TutorialViewController.swift in Sources */,
 				ABE280A01A5771500049DD52 /* AppDelegate.swift in Sources */,
+				AB00F6191A584ED800FE400A /* SinglePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ABE280A31A5771500049DD52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABE280A41A5771500049DD52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABE280A81A5771500049DD52 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -337,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppWithTutorialScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppWithTutorialScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +403,7 @@
 				ABE280BB1A5771500049DD52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABE280BC1A5771500049DD52 /* Build configuration list for PBXNativeTarget "AppWithTutorialScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +412,7 @@
 				ABE280BE1A5771500049DD52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
